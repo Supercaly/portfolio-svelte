@@ -1,17 +1,17 @@
-@import '@fontsource-variable/biorhyme';
-@import '@fontsource-variable/libre-franklin';
+@use '@fontsource-variable/biorhyme';
+@use '@fontsource-variable/libre-franklin';
 
 :root {
-	/* Fonts */
+	// Fonts
 	--font-brand: 'BioRhyme Variable', serif;
 	--font-plain: 'Libre Franklin Variable', sans-serif;
-	/* Font weights */
+	// Font weights
 	--font-weight-thin: 300;
 	--font-weight-regular: 400;
 	--font-weight-medium: 500;
 	--font-weight-semi-bold: 600;
 
-	/* Color theme */
+	// Color theme
 	--color-primary: #00443B;
 	--color-on-primary: #FFFFFF;
 	--color-primary-container: #1F6A5D;
@@ -40,8 +40,9 @@
 	--color-extra-backdrop: rgba(244, 243, 240, .8);
 	--color-extra-on-backdrop: #FFFFFF;
 
-	/* Dimensions */
+	// Dimensions
 	--5px: 5px;
+	--6px: 6px;
 	--8px: 8px;
 	--10px: 10px;
 	--11px: 11px;
@@ -61,6 +62,25 @@
 	--100px: 100px;
 
 	--zindex-nav: 1000;
+
+	// TODO: Make spacing responsive
+	--spacing-xxs: calc(7px);
+	--spacing-xs: calc(14px);
+	--spacing-s: calc(21px);
+	--spacing-m: calc(24px);
+	--spacing-l: calc(42px);
+	--spacing-xl: calc(64px);
+	--spacing-xxl: calc(130px);
+	/* --min-screen-width: 375px;
+	--max-screen-width: 1600px;
+	--screen-size-rateo: calc((100vw - var(--min-screen-width)) / (var(--max-screen-width) - var(--min-screen-width)));
+	--spacing-xxs: calc(7px + (7px * var(--screen-size-rateo)));
+	--spacing-xs: calc(14px + (14px * var(--screen-size-rateo)));
+	--spacing-s: calc(21px + (21px * var(--screen-size-rateo)));
+	--spacing-m: calc(24px + (24px * var(--screen-size-rateo)));
+	--spacing-l: calc(42px + (42px * var(--screen-size-rateo)));
+	--spacing-xl: calc(64px + (64px * var(--screen-size-rateo)));
+	--spacing-xxl: calc(130px + (130px * var(--screen-size-rateo))); */
 }
 
 body,

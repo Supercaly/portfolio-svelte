@@ -1,0 +1,17 @@
+$screen-small: 480px;
+$screen-medium: 768px;
+$screen-large: 1024px;
+$screen-xlarge: 1200px;
+$screen-xxlarge: 1600px;
+
+@mixin md($min, $max: false) {
+    $media-query: '(min-width: #{$min})';
+
+    @if $max {
+        $media-query: '#{$media-query} and (max-width: #{$max})';
+    }
+
+    @media #{$media-query} {
+        @content;
+    }
+}
