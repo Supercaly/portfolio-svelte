@@ -1,0 +1,191 @@
+@import '@fontsource-variable/biorhyme';
+@import '@fontsource-variable/libre-franklin';
+
+:root {
+	/* Fonts */
+	--font-brand: 'BioRhyme Variable', serif;
+	--font-plain: 'Libre Franklin Variable', sans-serif;
+	/* Font weights */
+	--font-weight-thin: 300;
+	--font-weight-regular: 400;
+	--font-weight-medium: 500;
+	--font-weight-semi-bold: 600;
+
+	/* Color theme */
+	--color-primary: #00443B;
+	--color-on-primary: #FFFFFF;
+	--color-primary-container: #1F6A5D;
+	--color-on-primary-container: #FFFFFF;
+	--color-secondary: #37524E;
+	--color-on-secondary: #FFFFFF;
+	--color-secondary-container: #5B7772;
+	--color-on-secondary-container: #FFFFFF;
+	--color-tertiary: #615E57;
+	--color-on-tertiary: #FFFFFF;
+	--color-tertiary-container: #F0EAE1;
+	--color-on-tertiary-container: #4F4C46;
+	--color-error: #BA1A1A;
+	--color-on-error: #FFFFFF;
+	--color-surface: #EDE7DE;
+	--color-surface-variant: #CEEAD2;
+	--color-surface-container: #FFFFFF;
+	--color-surface-container-high: #EBE7E7;
+	--color-on-surface: #1C1B1B;
+	--color-surface-on-primary-opacity-32: rgba(255, 255, 255, 0.32);
+	--color-surface-container-opacity-30: rgba(255, 255, 255, 0.3);
+	--color-surface-container-opacity-80: rgba(255, 255, 255, 0.8);
+	--color-extra-paper-status: #E9AC1E;
+	--color-extra-cockard: #F80F0F;
+	--color-extra-on-cockard: #FFFFFF;
+	--color-extra-backdrop: rgba(244, 243, 240, .8);
+	--color-extra-on-backdrop: #FFFFFF;
+
+	/* Dimensions */
+	--5px: 5px;
+	--8px: 8px;
+	--10px: 10px;
+	--11px: 11px;
+	--12px: 12px;
+	--14px: 14px;
+	--16px: 16px;
+	--18px: 18px;
+	--22px: 22px;
+	--24px: 24px;
+	--28px: 28px;
+	--32px: 32px;
+	--36px: 36px;
+	--45px: 45px;
+	--48px: 48px;
+	--80px: 80px;
+	--90px: 90px;
+	--100px: 100px;
+
+	--zindex-nav: 1000;
+}
+
+body,
+html {
+	font-family: var(--font-plain);
+	font-size: var(--16px);
+
+	color: var(--color-primary);
+	background: var(--color-surface);
+
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-family: var(--font-plain);
+	font-weight: var(--font-weight-regular);
+	font-size: 1rem;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+}
+
+.display-large {
+	font-family: var(--font-brand);
+	font-size: var(--80px);
+	font-weight: var(--font-weight-semi-bold);
+}
+
+.display-medium {
+	font-family: var(--font-brand);
+	font-size: var(--45px);
+	font-weight: var(--font-weight-semi-bold);
+}
+
+.display-small {
+	font-family: var(--font-brand);
+	font-size: var(--36px);
+	font-weight: var(--font-weight-semi-bold);
+}
+
+.headline-large {
+	font-family: var(--font-plain);
+	font-size: var(--24px);
+	font-weight: var(--font-weight-regular);
+}
+
+.headline-medium {
+	font-family: var(--font-plain);
+	font-size: var(--28px);
+	font-weight: var(--font-weight-semi-bold);
+}
+
+.headline-small {
+	font-family: var(--font-plain);
+	font-size: var(--45px);
+	font-weight: var(--font-weight-regular);
+}
+
+.title-large {
+	font-family: var(--font-plain);
+	font-size: var(--22px);
+	font-weight: var(--font-weight-semi-bold);
+}
+
+.title-medium {
+	font-family: var(--font-plain);
+	font-size: var(--18px);
+	font-weight: var(--font-weight-semi-bold);
+}
+
+.title-small {
+	font-family: var(--font-plain);
+	font-size: var(--14px);
+	font-weight: var(--font-weight-medium);
+}
+
+.body-large {
+	font-family: var(--font-plain);
+	font-size: var(--22px);
+	font-weight: var(--font-weight-regular);
+}
+
+.body-medium {
+	font-family: var(--font-plain);
+	font-size: var(--16px);
+	font-weight: var(--font-weight-regular);
+}
+
+.body-small {
+	font-family: var(--font-plain);
+	font-size: var(--14px);
+	font-weight: var(--font-weight-regular);
+}
+
+.label-large {
+	font-family: var(--font-plain);
+	font-size: var(--14px);
+	font-weight: var(--font-weight-medium);
+}
+
+.label-medium {
+	font-family: var(--font-plain);
+	font-size: var(--12px);
+	font-weight: var(--font-weight-medium);
+}
+
+.label-small {
+	font-family: var(--font-plain);
+	font-size: var(--11px);
+	font-weight: var(--font-weight-thin);
+}
