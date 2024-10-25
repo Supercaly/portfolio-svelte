@@ -1,5 +1,6 @@
 <script lang="ts">
     import "../app.scss";
+    import Footer from "./Footer.svelte";
 
     let {children} = $props();
 </script>
@@ -8,6 +9,7 @@
     <main>
         {@render children()}
     </main>
+    <Footer />
 </div>
 
 <style lang="scss">

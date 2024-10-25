@@ -41,6 +41,7 @@
 	--color-extra-on-backdrop: #FFFFFF;
 
 	// Dimensions
+	--4px: 4px;
 	--5px: 5px;
 	--6px: 6px;
 	--8px: 8px;
@@ -62,6 +63,8 @@
 	--100px: 100px;
 
 	--zindex-nav: 1000;
+
+	--max-width: 1800px;
 
 	// TODO: Make spacing responsive
 	--spacing-xxs: calc(7px);
