@@ -10,7 +10,9 @@
     </main>
 </div>
 
-<style>
+<style lang="scss">
+    @use "../mixins.scss" as *;
+
     .app {
         display: flex;
         flex-direction: column;
@@ -24,12 +26,15 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        /* TODO: Make margin top responsive */
-        margin-top: var(--100px);
-        padding: 1rem;
-        /* TODO: Make max width responsive */
-        max-width: var(--90px);
+        margin-top: var(--spacing-xl);
+        padding: 0px var(--16px);
+        max-width: var(--max-width);
         box-sizing: border-box;
+        
+        @include md($screen-medium) {
+            margin-top: var(--spacing-xxl);           
+            padding: 0px var(--32px);
+        }
     }
 
 </style>

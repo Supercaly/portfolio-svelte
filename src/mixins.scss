@@ -4,14 +4,24 @@ $screen-large: 1024px;
 $screen-xlarge: 1200px;
 $screen-xxlarge: 1600px;
 
-@mixin md($min, $max: false) {
-    $media-query: '(min-width: #{$min})';
+@mixin md($min: null, $max: null) {
+    $query: '';
 
-    @if $max {
-        $media-query: '#{$media-query} and (max-width: #{$max})';
+    @if ($min == null) and ($max ==  null) {
+        @error "At least one of $min or $max should be specified.";
+    }
+    @if $min != null {
+        $query: '(min-width: #{$min})';
+
+        @if ($max != null) {
+            $query: '#{$query} and ';
+        }
+    }
+    @if $max != null {
+        $query: '#{$query}(max-width: #{$max})';
     }
 
-    @media #{$media-query} {
+    @media #{$query} {
         @content;
     }
 }
