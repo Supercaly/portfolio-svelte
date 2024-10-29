@@ -41,6 +41,7 @@
 	--color-extra-on-backdrop: #FFFFFF;
 
 	// Dimensions
+	--2px: 2px;
 	--4px: 4px;
 	--5px: 5px;
 	--6px: 6px;
@@ -94,6 +95,7 @@ html {
 	color: var(--color-primary);
 	background: var(--color-surface);
 
+	width: 100%;
 	min-height: 100vh;
 	margin: 0;
 	padding: 0;

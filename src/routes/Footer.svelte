@@ -69,9 +69,9 @@
         text-decoration: none;
         color: var(--color-secondary);
         transition: all 0.2s ease-in-out;
-    }
 
-    a:hover {
-        color: var(--color-primary);
+        &:hover {
+            color: var(--color-primary);
+        }
     }
 </style>
