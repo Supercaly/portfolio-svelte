@@ -23,6 +23,7 @@ export default defineConfig({
 				],
 			},
 		}),
+		svg({ includePaths: ['./src/lib/assets/extra'] }),
 	],
 	css: {
 		preprocessorOptions: {
