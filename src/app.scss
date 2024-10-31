@@ -33,7 +33,8 @@
 	--color-surface-container: #FFFFFF;
 	--color-surface-container-high: #EBE7E7;
 	--color-on-surface: #1C1B1B;
-	--color-surface-on-primary-opacity-32: rgba(255, 255, 255, 0.32);
+	--color-on-primary-opacity-32: rgba(255, 255, 255, 0.32);
+	--color-on-primary-opacity-40: rgba(255, 255, 255, 0.4);
 	--color-surface-container-opacity-30: rgba(255, 255, 255, 0.3);
 	--color-surface-container-opacity-80: rgba(255, 255, 255, 0.8);
 	--color-extra-paper-status: #E9AC1E;
@@ -41,6 +42,7 @@
 	--color-extra-on-cockard: #FFFFFF;
 	--color-extra-backdrop: rgba(244, 243, 240, .8);
 	--color-extra-on-backdrop: #FFFFFF;
+	--color-extra-overlay: rgba(0, 0, 0, 0.25);
 
 	// Dimensions
 	--2px: 2px;
@@ -54,21 +56,23 @@
 	--14px: 14px;
 	--16px: 16px;
 	--18px: 18px;
+	--20px: 20px;
 	--22px: 22px;
 	--24px: 24px;
 	--28px: 28px;
 	--32px: 32px;
 	--36px: 36px;
+	--42px: 42px;
 	--45px: 45px;
 	--48px: 48px;
-	--52px: 52px;
+	--64px: 64px;
 	--80px: 80px;
-	--90px: 90px;
-	--100px: 100px;
 
 	--zindex-nav: 1000;
+	--zindex-contacts: 2000;
 
 	--max-width: 1800px;
+	--contacts-width: 320px;
 	--card-max-width: 950px;
 	--header-max-width: 900px;
 
@@ -221,7 +225,7 @@ p {
 .body-large {
 	font-family: var(--font-plain);
 	font-weight: var(--font-weight-regular);
-	font-size: var(--22px);
+	font-size: var(--14px);
 }
 
 .body-medium {

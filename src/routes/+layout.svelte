@@ -1,5 +1,6 @@
 <script lang="ts">
     import "../app.scss";
+    import Contacts from "./Contacts.svelte";
     import Footer from "./Footer.svelte";
     import Navbar from "./Navbar.svelte";
 
@@ -12,6 +13,13 @@
 </script>
 
 <div class="app">
+    {#if showContacts}
+        <Contacts
+            onClick={() => {
+                showContacts = false;
+            }}
+        />
+    {/if}
     <Navbar
         bind:currentTheme={theme}
         onContactsClick={() => {
