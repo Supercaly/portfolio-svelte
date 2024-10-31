@@ -10,8 +10,8 @@
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in congue nisi, sit amet cursus urna. Fusce vel enim ipsum. Curabitur mattis metus ligula, vel tincidunt arcu suscipit eget.",
 			links: [
 				{ url: "#", type: "github" },
-				{ url: "#", type: "web" },
-				{ url: "#", type: "store" },
+				{ url: "#", type: "globe" },
+				{ url: "#", type: "play" },
 			],
 		},
 		{
@@ -39,8 +39,8 @@
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in congue nisi, sit amet cursus urna. Fusce vel enim ipsum. Curabitur mattis metus ligula, vel tincidunt arcu suscipit eget.",
 			links: [
 				{ url: "#", type: "github" },
-				{ url: "#", type: "web" },
-				{ url: "#", type: "store" },
+				{ url: "#", type: "globe" },
+				{ url: "#", type: "play" },
 			],
 			tags: ["tag 1", "tag 2", "tag 3"],
 		}

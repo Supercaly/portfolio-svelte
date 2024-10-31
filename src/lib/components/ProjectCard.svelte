@@ -1,6 +1,6 @@
 <script lang="ts">
     import BaseCard from "./BaseCard.svelte";
-    import Icon from "./Icon.svelte";
+    import IconLink from "./IconLink.svelte";
 
     interface Props {
         title: string;
@@ -22,10 +22,12 @@
         {#if links !== undefined && links.length > 0}
             <div class="links">
                 {#each links as link}
-                    <!-- TODO: Make IconLink component -->
-                    <a href={link.url} class="link">
-                        <Icon name={link.type} />
-                    </a>
+                    <IconLink
+                        href={link.url}
+                        target="_blank"
+                        name={link.type}
+                        style="width: var(--48px); height: var(--48px); color: var(--color-on-surface);"
+                    />
                 {/each}
             </div>
         {/if}
@@ -62,15 +64,6 @@
             flex-direction: row;
             flex-wrap: wrap;
             color: var(--color-on-surface);
-
-            .link {
-                width: var(--48px);
-                height: var(--48px);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: var(--color-on-surface);
-            }
         }
 
         .tags {

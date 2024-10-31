@@ -1,5 +1,6 @@
 <script lang="ts">
     import Icon from "$lib/components/Icon.svelte";
+    import IconLink from "$lib/components/IconLink.svelte";
 
     interface Props {
         onClick: () => void;
@@ -45,13 +46,14 @@
             </div>
             <div class="card">
                 <h6 class="title-small">Social</h6>
-                <!-- TODO: Make icons dynamic -->
                 <div class="socials">
                     {#each infos.social as social}
-                        <!-- TODO: Make IconLink component -->
-                        <a href={social.url} target="_blank">
-                            <Icon name={social.icon} />
-                        </a>
+                        <IconLink
+                            href={social.url}
+                            target="_blank"
+                            name={social.icon}
+                            style="width: var(--48px); height: var(--48px); color: var(--color-on-surface);"
+                        />
                     {/each}
                 </div>
             </div>
@@ -142,7 +144,7 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
-                gap: var(--10px);
+                gap: 0px;
             }
         }
     }
