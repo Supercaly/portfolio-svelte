@@ -51,7 +51,7 @@
         grid-column-end: 21;
         list-style-type: none;
         padding: 0px;
-        margin: var(--spacing-l) 0px 0px;
+        margin: var(--32px) 0px 0px;
 
         @include md($screen-medium) {
             margin: 0px;

@@ -9,7 +9,7 @@
 
 <div class="content">
     <h1 class="display-large">{title}</h1>
-    <h3 class="headline-large">{description}</h3>
+    <h3 class="headline-medium">{description}</h3>
 </div>
 
 <style lang="scss">

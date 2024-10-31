@@ -35,7 +35,7 @@
     ];
 
     let screenWidth: number = $state(0);
-    let smallScreen: boolean = $derived(screenWidth < 480);
+    let mediumScreen: boolean = $derived(screenWidth < 768);
 </script>
 
 <svelte:head>
@@ -53,7 +53,7 @@
     <div class="content">
         <div class="picture"></div>
         <div class="text-content">
-            <p class="headline-small">
+            <p class="headline-large">
                 Developer & PhD student based in Italy.
             </p>
             <p class="body-medium">
@@ -86,7 +86,7 @@
         <SubsectionHeader title={skill.name} />
         <div class="avatars">
             {#each skill.icons as avatar}
-                <Avatar size={smallScreen ? "70px" : "100px"} {...avatar} />
+                <Avatar size={mediumScreen ? "70px" : "100px"} {...avatar} />
             {/each}
         </div>
     {/each}
@@ -109,7 +109,8 @@
             border-radius: var(--12px);
 
             @include md($max: $screen-medium) {
-                grid-column-end: 24;
+                grid-column-start: 2;
+                grid-column-end: 25;
                 width: 100%;
                 margin-top: 0px;
                 border-radius: var(--24px) var(--24px) 0px 0px;
@@ -124,7 +125,8 @@
             gap: var(--16px);
 
             @include md($max: $screen-medium) {
-                grid-column-start: 3;
+                grid-column-start: 2;
+                grid-column-end: 25;
                 margin-top: var(--spacing-l);
             }
         }

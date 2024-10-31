@@ -1,6 +1,8 @@
 @use '@fontsource-variable/biorhyme';
 @use '@fontsource-variable/libre-franklin';
 
+@use 'mixins.scss' as *;
+
 :root {
 	// Fonts
 	--font-brand: 'BioRhyme Variable', serif;
@@ -130,90 +132,132 @@ p {
 
 .display-large {
 	font-family: var(--font-brand);
-	font-size: var(--80px);
 	font-weight: var(--font-weight-semi-bold);
+	font-size: var(--42px);
+
+	@include md($screen-small) {
+		font-size: var(--64px);
+	}
+
+	@include md($screen-medium) {
+		font-size: var(--80px);
+	}
 }
 
 .display-medium {
 	font-family: var(--font-brand);
-	font-size: var(--45px);
 	font-weight: var(--font-weight-semi-bold);
+	font-size: var(--36px);
+
 }
 
 .display-small {
 	font-family: var(--font-brand);
-	font-size: var(--36px);
 	font-weight: var(--font-weight-semi-bold);
+	font-size: var(--24px);
+
+	@include md($screen-medium) {
+		font-size: var(--28px);
+	}
 }
 
 .headline-large {
 	font-family: var(--font-plain);
-	font-size: var(--24px);
-	font-weight: var(--font-weight-regular);
+	font-weight: var(--font-weight-medium);
+	font-size: var(--18px);
+
+
+	@include md($screen-medium) {
+		font-size: var(--28px);
+	}
 }
 
 .headline-medium {
 	font-family: var(--font-plain);
-	font-size: var(--28px);
-	font-weight: var(--font-weight-semi-bold);
+	font-weight: var(--font-weight-regular);
+	font-size: var(--16px);
+
+	@include md($screen-small) {
+		font-size: var(--20px);
+	}
+
+	@include md($screen-medium) {
+		font-size: var(--24px);
+	}
 }
 
 .headline-small {
 	font-family: var(--font-plain);
-	font-size: var(--45px);
 	font-weight: var(--font-weight-regular);
+	font-size: var(--45px);
 }
 
 .title-large {
 	font-family: var(--font-plain);
-	font-size: var(--22px);
 	font-weight: var(--font-weight-semi-bold);
+	font-size: var(--16px);
+
+	@include md($screen-medium) {
+		font-size: var(--18px);
+	}
 }
 
 .title-medium {
 	font-family: var(--font-plain);
-	font-size: var(--18px);
 	font-weight: var(--font-weight-semi-bold);
+	font-size: var(--14px);
+
+	@include md($screen-small) {
+		font-size: var(--16px);
+	}
 }
 
 .title-small {
 	font-family: var(--font-plain);
-	font-size: var(--14px);
 	font-weight: var(--font-weight-medium);
+	font-size: var(--14px);
 }
 
 .body-large {
 	font-family: var(--font-plain);
-	font-size: var(--22px);
 	font-weight: var(--font-weight-regular);
+	font-size: var(--22px);
 }
 
 .body-medium {
 	font-family: var(--font-plain);
-	font-size: var(--16px);
 	font-weight: var(--font-weight-regular);
+	font-size: var(--12px);
+
+	@include md($screen-medium) {
+		font-size: var(--14px);
+	}
 }
 
 .body-small {
 	font-family: var(--font-plain);
-	font-size: var(--14px);
 	font-weight: var(--font-weight-regular);
+	font-size: var(--10px);
+
+	@include md($screen-medium) {
+		font-size: var(--12px);
+	}
 }
 
 .label-large {
 	font-family: var(--font-plain);
-	font-size: var(--14px);
 	font-weight: var(--font-weight-medium);
+	font-size: var(--14px);
 }
 
 .label-medium {
 	font-family: var(--font-plain);
-	font-size: var(--12px);
 	font-weight: var(--font-weight-medium);
+	font-size: var(--12px);
 }
 
 .label-small {
 	font-family: var(--font-plain);
-	font-size: var(--11px);
 	font-weight: var(--font-weight-thin);
+	font-size: var(--11px);
 }

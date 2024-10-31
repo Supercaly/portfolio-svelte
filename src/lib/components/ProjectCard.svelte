@@ -60,7 +60,7 @@
     .content {
         display: flex;
         flex-direction: column;
-        gap: var(--16px);
+        gap: var(--8px);
         padding: var(--24px) var(--32px);
         color: var(--color-on-surface);
 
@@ -88,7 +88,7 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            gap: var(--8px);
+            gap: var(--10px);
 
             .tag {
                 display: inline-block;

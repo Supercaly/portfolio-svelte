@@ -7,7 +7,7 @@
 </script>
 
 <div class="content">
-    <h1 class="headline-medium">{title}</h1>
+    <h1 class="display-small">{title}</h1>
 </div>
 
 <style lang="scss">
