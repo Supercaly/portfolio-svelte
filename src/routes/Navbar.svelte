@@ -3,13 +3,6 @@
     import { page } from "$app/stores";
     import Icon from "$lib/components/Icon.svelte";
     import { onDestroy, onMount } from "svelte";
-    import SunIcon from "$lib/assets/icons/sun.svg?component";
-    import MoonIcon from "$lib/assets/icons/moon.svg?component";
-    import UserIcon from "$lib/assets/icons/user.svg?component";
-    import BriefcaseIcon from "$lib/assets/icons/briefcase.svg?component";
-    import BarChartIcon from "$lib/assets/icons/bar-chart-2.svg?component";
-    import LayersIcon from "$lib/assets/icons/layers.svg?component";
-    import AtSignIcon from "$lib/assets/icons/at-sign.svg?component";
 
     let showBackdrop = $state(false);
     if (browser) {
@@ -53,7 +46,7 @@
             <!-- TODO: Animate page selection -->
             <li aria-current={$page.url.pathname === "/" ? "page" : undefined}>
                 <a class="nav-btn" href="/">
-                    <div class="nav-icon"><Icon><UserIcon /></Icon></div>
+                    <div class="nav-icon"><Icon name="user" /></div>
                     <p class="nav-text label-medium">About</p>
                 </a>
             </li>
@@ -63,7 +56,7 @@
                     : undefined}
             >
                 <a class="nav-btn" href="/experience">
-                    <div class="nav-icon"><Icon><BriefcaseIcon /></Icon></div>
+                    <div class="nav-icon"><Icon name="briefcase" /></div>
                     <p class="nav-text label-medium">Experience</p>
                 </a>
             </li>
@@ -73,7 +66,7 @@
                     : undefined}
             >
                 <a class="nav-btn" href="/publications">
-                    <div class="nav-icon"><Icon><BarChartIcon /></Icon></div>
+                    <div class="nav-icon"><Icon name="bar-chart-2" /></div>
                     <p class="nav-text label-medium">Publications</p>
                 </a>
             </li>
@@ -83,25 +76,19 @@
                     : undefined}
             >
                 <a class="nav-btn" href="/projects">
-                    <div class="nav-icon"><Icon><LayersIcon /></Icon></div>
+                    <div class="nav-icon"><Icon name="layers" /></div>
                     <p class="nav-text label-medium">Projects</p>
                 </a>
             </li>
             <li>
                 <button onclick={onContactsClick} class="nav-btn">
-                    <div class="nav-icon"><Icon><AtSignIcon /></Icon></div>
+                    <div class="nav-icon"><Icon name="at-sign" /></div>
                     <p class="nav-text label-medium">Contacts</p>
                 </button>
             </li>
             <li>
                 <button onclick={onThemeSwitch} class="theme-switch"
-                    ><Icon>
-                        {#if currentTheme === "light"}
-                            <SunIcon />
-                        {:else}
-                            <MoonIcon />
-                        {/if}
-                    </Icon>
+                    ><Icon name={currentTheme === "light" ? "sun" : "moon"} />
                 </button>
             </li>
         </ul>

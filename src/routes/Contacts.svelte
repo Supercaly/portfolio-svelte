@@ -1,11 +1,5 @@
 <script lang="ts">
     import Icon from "$lib/components/Icon.svelte";
-    import XIcon from "$lib/assets/icons/x.svg?component";
-    import FacebookIcon from "$lib/assets/icons/facebook.svg?component";
-    import InstagramIcon from "$lib/assets/icons/instagram.svg?component";
-    import TwitterIcon from "$lib/assets/icons/twitter.svg?component";
-    import GitHubIcon from "$lib/assets/icons/github.svg?component";
-    import LinkedInIcon from "$lib/assets/icons/linkedin.svg?component";
 
     interface Props {
         onClick: () => void;
@@ -16,7 +10,13 @@
     const infos = {
         email: "name.surname@email.com",
         phone: "+00 123 4567890",
-        // social: [],
+        social: [
+            { icon: "facebook", url: "/" },
+            { icon: "instagram", url: "/" },
+            { icon: "twitter", url: "/" },
+            { icon: "github", url: "/" },
+            { icon: "linkedin", url: "/" },
+        ],
     };
 </script>
 
@@ -25,7 +25,7 @@
         <div class="header">
             <h5 class="title-large">Contact Me</h5>
             <button onclick={onClick} class="close-btn">
-                <Icon><XIcon /></Icon>
+                <Icon name="x" />
             </button>
         </div>
         <div class="content">
@@ -47,16 +47,12 @@
                 <h6 class="title-small">Social</h6>
                 <!-- TODO: Make icons dynamic -->
                 <div class="socials">
-                    <!-- TODO: Make IconLink component -->
-                    <a href="/" target="_blank"><Icon><FacebookIcon /></Icon></a
-                    >
-                    <a href="/" target="_blank"
-                        ><Icon><InstagramIcon /></Icon></a
-                    >
-                    <a href="/" target="_blank"><Icon><TwitterIcon /></Icon></a>
-                    <a href="/" target="_blank"><Icon><LinkedInIcon /></Icon></a
-                    >
-                    <a href="/" target="_blank"><Icon><GitHubIcon /></Icon></a>
+                    {#each infos.social as social}
+                        <!-- TODO: Make IconLink component -->
+                        <a href={social.url} target="_blank">
+                            <Icon name={social.icon} />
+                        </a>
+                    {/each}
                 </div>
             </div>
         </div>

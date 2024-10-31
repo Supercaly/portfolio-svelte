@@ -1,6 +1,5 @@
 <script lang="ts">
     import BaseCard from "./BaseCard.svelte";
-    import MapPinIcon from "$lib/assets/icons/map-pin.svg?component";
     import Icon from "./Icon.svelte";
 
     interface Props {
@@ -32,7 +31,7 @@
                 <p class="body-small">{description}</p>
             {/if}
             <div class="location">
-                <Icon><MapPinIcon /></Icon>
+                <Icon name="map-pin" />
                 <p class="body-small">{location}</p>
             </div>
         </div>

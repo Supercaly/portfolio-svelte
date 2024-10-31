@@ -1,9 +1,6 @@
 <script lang="ts">
     import BaseCard from "./BaseCard.svelte";
     import Icon from "./Icon.svelte";
-    import GlobeIcon from "$lib/assets/icons/globe.svg?component";
-    import GitHubIcon from "$lib/assets/icons/github.svg?component";
-    import PlayIcon from "$lib/assets/icons/play.svg?component";
 
     interface Props {
         title: string;
@@ -27,15 +24,7 @@
                 {#each links as link}
                     <!-- TODO: Make IconLink component -->
                     <a href={link.url} class="link">
-                        <Icon>
-                            {#if link.type === "github"}
-                                <GitHubIcon />
-                            {:else if link.type === "store"}
-                                <PlayIcon />
-                            {:else}
-                                <GlobeIcon />
-                            {/if}
-                        </Icon>
+                        <Icon name={link.type} />
                     </a>
                 {/each}
             </div>

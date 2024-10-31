@@ -2,9 +2,6 @@
     import BaseCard from "./BaseCard.svelte";
     import Icon from "./Icon.svelte";
     import Cockade from "$lib/assets/extra/cockade.svg?component";
-    import ConferenceIcon from "$lib/assets/icons/users.svg?component";
-    import JournalIcon from "$lib/assets/icons/book-open.svg?component";
-    import MapPinIcon from "$lib/assets/icons/map-pin.svg?component";
 
     interface Props {
         type: string;
@@ -51,15 +48,9 @@
                         <p class="label-medium"></p>
                     {/if}
                 {:else}
-                    <Icon>
-                        {#if type === "conference"}
-                            <ConferenceIcon />
-                        {:else if type === "journal"}
-                            <JournalIcon />
-                        {:else}
-                            <div></div>
-                        {/if}
-                    </Icon>
+                    <Icon
+                        name={type === "conference" ? "users" : "book-open"}
+                    />
                 {/if}
             </div>
             <div class="text-content">
@@ -70,18 +61,18 @@
                 {:else}
                     <h5 class="title-large">{title}</h5>
                 {/if}
-                <p class="body-medium">{authors.join('; ')}</p>
+                <p class="body-medium">{authors.join("; ")}</p>
                 <p class="body-medium">{year}</p>
                 <p class="body-medium">{journal}</p>
                 {#if tags !== undefined}
-                    <p class="body-medium">{tags.join(', ')}</p>
+                    <p class="body-medium">{tags.join(", ")}</p>
                 {/if}
                 {#if doi !== undefined}
                     <p class="body-small">{doi}</p>
                 {/if}
                 {#if location !== undefined}
                     <div class="location">
-                        <Icon><MapPinIcon /></Icon>
+                        <Icon name="map-pin" />
                         <p class="body-small">{location}</p>
                     </div>
                 {/if}
