@@ -72,6 +72,7 @@
 		title="Publications."
 		description="A collection of my scientific publications on academic journals and conferences around the world."
 	/>
+	<!-- TODO: Add citations off of google scholar -->
 	<div class="content">
 		{#each articles as article}
 			<div class="project"><ArticleCard {...article} /></div>

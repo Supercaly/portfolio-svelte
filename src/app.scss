@@ -13,37 +13,6 @@
 	--font-weight-medium: 500;
 	--font-weight-semi-bold: 600;
 
-	// Color theme
-	--color-primary: #00443B;
-	--color-on-primary: #FFFFFF;
-	--color-primary-container: #1F6A5D;
-	--color-on-primary-container: #FFFFFF;
-	--color-secondary: #37524E;
-	--color-on-secondary: #FFFFFF;
-	--color-secondary-container: #5B7772;
-	--color-on-secondary-container: #FFFFFF;
-	--color-tertiary: #615E57;
-	--color-on-tertiary: #FFFFFF;
-	--color-tertiary-container: #F0EAE1;
-	--color-on-tertiary-container: #4F4C46;
-	--color-error: #BA1A1A;
-	--color-on-error: #FFFFFF;
-	--color-surface: #EDE7DE;
-	--color-surface-variant: #CEEAD2;
-	--color-surface-container: #FFFFFF;
-	--color-surface-container-high: #EBE7E7;
-	--color-on-surface: #1C1B1B;
-	--color-on-primary-opacity-32: rgba(255, 255, 255, 0.32);
-	--color-on-primary-opacity-40: rgba(255, 255, 255, 0.4);
-	--color-surface-container-opacity-30: rgba(255, 255, 255, 0.3);
-	--color-surface-container-opacity-80: rgba(255, 255, 255, 0.8);
-	--color-extra-paper-status: #E9AC1E;
-	--color-extra-cockard: #F80F0F;
-	--color-extra-on-cockard: #FFFFFF;
-	--color-extra-backdrop: rgba(244, 243, 240, .8);
-	--color-extra-on-backdrop: #FFFFFF;
-	--color-extra-overlay: rgba(0, 0, 0, 0.25);
-
 	// Dimensions
 	--2px: 2px;
 	--4px: 4px;
@@ -68,9 +37,11 @@
 	--64px: 64px;
 	--80px: 80px;
 
+	// z-indexes
 	--zindex-nav: 1000;
 	--zindex-contacts: 2000;
 
+	// Min/Max widths
 	--min-width: 375px;
 	--max-width: 1800px;
 	--contacts-width: 320px;

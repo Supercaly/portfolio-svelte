@@ -6,11 +6,17 @@
 
     let { children } = $props();
 
-    let theme = $state("light");
+    // Default theme based on the current hours of light
+    const currentHour = new Date().getHours();
+    let theme = $state((currentHour > 6 && currentHour < 20) ? 'light': 'dark');
     let showContacts = $state(false);
 
     $inspect("current theme set to", theme);
 </script>
+
+<svelte:head>
+    <link rel="stylesheet" href="/theme/{theme}.css"/>
+</svelte:head>
 
 <div class="app">
     {#if showContacts}
@@ -21,7 +27,17 @@
         />
     {/if}
     <Navbar
-        bind:currentTheme={theme}
+        currentTheme={theme}
+        onThemeChange={() => {
+            switch (theme) {
+                case 'light':
+                    theme = 'dark';
+                    break;
+                case 'dark':
+                    theme = 'light';
+                    break;
+            }
+        }}
         onContactsClick={() => {
             showContacts = true;
         }}

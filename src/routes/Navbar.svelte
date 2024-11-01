@@ -23,21 +23,23 @@
 
     interface Props {
         onContactsClick: () => void;
+        onThemeChange: () => void;
         currentTheme: string;
     }
 
-    let { onContactsClick, currentTheme = $bindable() }: Props = $props();
+    let { onContactsClick, onThemeChange, currentTheme }: Props = $props();
 
-    function onThemeSwitch() {
-        switch (currentTheme) {
-            case "light":
-                currentTheme = "dark";
-                break;
-            case "dark":
-                currentTheme = "light";
-                break;
-        }
-    }
+    // function onThemeSwitch() {
+    //     onThemeChange(cur)
+    //     switch (currentTheme) {
+    //         case "light":
+    //             currentTheme = "dark";
+    //             break;
+    //         case "dark":
+    //             currentTheme = "light";
+    //             break;
+    //     }
+    // }
 </script>
 
 <header>
@@ -87,7 +89,7 @@
                 </button>
             </li>
             <li>
-                <button onclick={onThemeSwitch} class="theme-switch"
+                <button onclick={onThemeChange} class="theme-switch"
                     ><Icon name={currentTheme === "light" ? "sun" : "moon"} />
                 </button>
             </li>
@@ -155,9 +157,9 @@
                         }
 
                         // Turns off navbar icons on large screens
-                        .nav-icon {
-                            display: none;
-                        }
+                        // .nav-icon {
+                        //     display: none;
+                        // }
                     }
 
                     &[aria-current="page"] {
