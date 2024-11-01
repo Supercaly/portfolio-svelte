@@ -30,7 +30,6 @@
             </button>
         </div>
         <div class="content">
-            <!-- TODO: Make content dynamic -->
             <div class="card">
                 <h6 class="title-small">Email</h6>
                 <a
@@ -80,16 +79,10 @@
             border-radius: var(--12px) var(--12px) 0px 0px;
             z-index: var(--zindex-contacts);
 
-            @include md($screen-small) {
-                width: var(--contacts-width);
-                // TODO: Replace with spacing 32-24
-                inset: auto 16px 16px auto;
-                border-radius: var(--12px);
-            }
-
             @include md($screen-medium) {
-                // TODO: Replace with spacing 32-24
-                inset: auto 40px 30px auto;
+                width: var(--contacts-width);
+                inset: auto var(--spacing-l) var(--spacing-m) auto;
+                border-radius: var(--12px);
             }
         }
 

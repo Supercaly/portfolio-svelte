@@ -28,11 +28,7 @@
         width: 100%;
         max-width: var(--max-width);
         grid-template-columns: repeat(25, minmax(0, 1fr));
-        padding: var(--spacing-xl) 0px;
-
-        @include md($screen-large) {
-            padding: var(--spacing-xxl) 0px;
-        }
+        padding: var(--spacing-xl) 0px var(--spacing-xxl);
     }
 
     .copyright {

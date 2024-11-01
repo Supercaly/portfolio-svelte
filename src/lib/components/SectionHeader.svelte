@@ -20,8 +20,7 @@
         flex-direction: column;
         align-items: center;
         align-content: center;
-        // TODO: Make gap responsive
-        gap: var(--20px);
+        gap: var(--spacing-s);
         padding: var(--spacing-l) 0px;
 
         h1,

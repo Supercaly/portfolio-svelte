@@ -105,11 +105,7 @@
         bottom: auto;
         right: 0px;
         z-index: var(--zindex-nav);
-        padding-top: var(--16px);
-
-        @include md($screen-large) {
-            padding-top: var(--24px);
-        }
+        padding-top: var(--spacing-s);
 
         nav {
             display: flex;

@@ -48,15 +48,10 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        margin-top: var(--spacing-xl);
-        padding: 0px var(--24px);
+        margin-top: var(--spacing-xxl);
+        padding: 0px var(--spacing-m);
         max-width: var(--max-width);
         box-sizing: border-box;
         overflow-x: hidden;
-
-        @include md($screen-medium) {
-            margin-top: var(--spacing-xxl);
-            padding: 0px var(--32px);
-        }
     }
 </style>
