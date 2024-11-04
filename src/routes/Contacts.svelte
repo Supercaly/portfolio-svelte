@@ -126,7 +126,7 @@
                 display: flex;
                 flex-direction: column;
                 padding: var(--16px);
-                background: var(--color-extra-on-backdrop);
+                background: var(--color-surface-container);
                 border-radius: var(--12px);
                 color: var(--color-secondary);
                 gap: var(--8px);

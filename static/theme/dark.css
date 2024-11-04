@@ -1,0 +1,29 @@
+:root {
+    --color-primary: #8DD4C4;
+    --color-on-primary: #00382F;
+    --color-primary-container: #004F44;
+    --color-on-primary-container: #A4EBDB;
+    --color-secondary: #AFCCC7;
+    --color-on-secondary: #1A3532;
+    --color-secondary-container: #425D59;
+    --color-on-secondary-container: #F9FFFD;
+    --color-tertiary: #FFFFFF;
+    --color-on-tertiary: #33302A;
+    --color-tertiary-container: #D9D4CB;
+    --color-on-tertiary-container: #423F39;
+    --color-error: #FFB4AB;
+    --color-on-error: #690005;
+    --color-surface: #283831;
+    --color-surface-variant: #5A8B76;
+    --color-surface-container: #201F1F;
+    --color-surface-container-high: #2B2A2A;
+    --color-on-surface: #E6E1E1;
+    --color-on-primary-opacity-32: rgba(0, 56, 47, 0.32);
+    --color-on-primary-opacity-40: rgba(0, 56, 47, 0.4);
+    --color-surface-container-opacity-30: rgba(32, 31, 31, 0.3);
+    --color-surface-container-opacity-80: rgba(32, 31, 31, 0.8);
+    --color-extra-paper-status: #E9AC1E;
+    --color-extra-backdrop: rgba(35, 56, 49, .7);
+    --color-extra-on-backdrop: #324B41;
+    --color-extra-overlay: rgba(0, 0, 0, 0.25);
+}
