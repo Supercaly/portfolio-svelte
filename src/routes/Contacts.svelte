@@ -1,24 +1,13 @@
 <script lang="ts">
     import Icon from "$lib/components/Icon.svelte";
     import IconLink from "$lib/components/IconLink.svelte";
+    import infos from "$lib/config/infos.json";
 
     interface Props {
         onClick: () => void;
     }
 
     const { onClick }: Props = $props();
-
-    const infos = {
-        email: "name.surname@email.com",
-        phone: "+00 123 4567890",
-        social: [
-            { icon: "facebook", url: "/" },
-            { icon: "instagram", url: "/" },
-            { icon: "twitter", url: "/" },
-            { icon: "github", url: "/" },
-            { icon: "linkedin", url: "/" },
-        ],
-    };
 </script>
 
 <div class="contacts">
@@ -32,16 +21,25 @@
         <div class="content">
             <div class="card">
                 <h6 class="title-small">Email</h6>
-                <a
-                    class="body-large"
-                    href="mailto:{infos.email}"
-                    target="_blank">{infos.email}</a
-                >
+                {#each infos.emails as email}
+                    <a class="body-large" href="mailto:{email}" target="_blank"
+                        >{email}</a
+                    >
+                {/each}
             </div>
             <div class="card">
                 <h6 class="title-small">Phone</h6>
-                <a class="body-medium" href="tel:{infos.phone}">{infos.phone}</a
-                >
+                {#each infos.phones as phone}
+                    <a class="body-medium" href="tel:{phone}">{phone}</a>
+                {/each}
+            </div>
+            <div class="card">
+                <h6 class="title-small">Academic</h6>
+                {#each infos.academic as ac}
+                    <a class="body-medium" href={ac.url} target="_blank"
+                        >{ac.name}</a
+                    >
+                {/each}
             </div>
             <div class="card">
                 <h6 class="title-small">Social</h6>
@@ -51,7 +49,7 @@
                             href={social.url}
                             target="_blank"
                             name={social.icon}
-                            style="width: var(--48px); height: var(--48px); color: var(--color-on-surface);"
+                            style="width: var(--32px); height: var(--32px); color: var(--color-on-surface);"
                         />
                     {/each}
                 </div>

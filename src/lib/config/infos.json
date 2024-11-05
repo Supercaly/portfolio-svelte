@@ -1,0 +1,49 @@
+{
+    "emails": [
+        "l.calisti96@gmail.com",
+        "l.calisti@campus.uniurb.it"
+    ],
+    "phones": [
+        "+39 331 9018150"
+    ],
+    "academic": [
+        {
+            "url": "https://scholar.google.com/citations?hl=it&user=MEseLe4AAAAJ&view_op=list_works&sortby=pubdate",
+            "name": "Scholar"
+        },
+        {
+            "url": "/curriculum.pdf",
+            "name": "CV"
+        }
+    ],
+    "social": [
+        {
+            "url": "https://github.com/Supercaly/",
+            "icon": "github"
+        },
+        {
+            "url": "https://www.instagram.com/lorenzo_calisti/",
+            "icon": "instagram"
+        },
+        {
+            "url": "https://www.linkedin.com/in/lorenzo-calisti96/",
+            "icon": "linkedin"
+        },
+        {
+            "url": "https://www.facebook.com/l.calisti/",
+            "icon": "facebook"
+        },
+        {
+            "url": "https://twitter.com/lorenzocalisti",
+            "icon": "twitter"
+        },
+        {
+            "url": "https://wa.me/+393319018150",
+            "icon": "whatsapp"
+        },
+        {
+            "url": "https://t.me/Supercaly",
+            "icon": "telegram"
+        }
+    ]
+}
