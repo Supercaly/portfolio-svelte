@@ -8,7 +8,7 @@
 
     // Default theme based on the current hours of light
     const currentHour = new Date().getHours();
-    let theme = $state((currentHour > 6 && currentHour < 20) ? 'light': 'dark');
+    let theme = $state((currentHour >= 6 && currentHour <= 20) ? 'light': 'dark');
     let showContacts = $state(false);
 
     $inspect("current theme set to", theme);

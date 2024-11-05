@@ -1,73 +1,75 @@
+<script lang="ts">
+    const currentTime = new Date().getHours();
+    const ticks = [...Array(24).keys()];
+
+    function mapToHeight(num: number, time: number) {
+        switch (Math.abs(time - num)) {
+            case 0:
+                return 30;
+            case 1:
+                return 25;
+            case 2:
+                return 20;
+            case 3:
+                return 15;
+            default:
+                return 10;
+        }
+    }
+</script>
+
 <footer>
-    <div class="copyright">
+    <div>
         <p class="title-medium">Designed and built by me in 2024.</p>
     </div>
-    <ul>
-        <li class="title-medium">Elsewhere</li>
-        <li class="body-medium">
-            <a href="/" target="_blank" rel="noopener noreferrer">Instagram</a>
-        </li>
-
-        <li class="body-medium">
-            <a href="/" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </li>
-        <li class="body-medium">
-            <a href="/" target="_blank" rel="noopener noreferrer">CV</a>
-        </li>
-        <li class="body-medium">
-            <a href="/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </li>
-    </ul>
+    <div class="sundial">
+        {#each ticks as t}
+            <div class="hour">
+                <div
+                    class="line"
+                    style="opacity: {t + 1 >= 6 && t + 1 <= 20
+                        ? '1'
+                        : '0.2'}; height: {mapToHeight(t + 1, currentTime)}px"
+                ></div>
+            </div>
+        {/each}
+    </div>
 </footer>
 
 <style lang="scss">
     @use "../mixins.scss" as *;
 
     footer {
-        display: grid;
-        width: 100%;
-        max-width: var(--max-width);
-        grid-template-columns: repeat(25, minmax(0, 1fr));
-        padding: var(--spacing-xl) 0px var(--spacing-xxl);
-    }
-
-    .copyright {
-        display: block;
-        grid-column-start: 4;
-        grid-column-end: 21;
-
-        @include md($screen-medium) {
-            grid-column-end: 15;
-        }
-    }
-
-    ul {
-        display: block;
-        grid-column-start: 4;
-        grid-column-end: 21;
-        list-style-type: none;
-        padding: 0px;
-        margin: var(--32px) 0px 0px;
-
-        @include md($screen-medium) {
-            margin: 0px;
-            grid-column-start: 21;
-            grid-column-end: 23;
-        }
-    }
-
-    li {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: var(--footer-max-width);
+        padding: var(--spacing-l) 0px var(--spacing-xl);
+        gap: var(--spacing-l);
     }
 
-    a {
-        margin-top: var(--24px);
-        text-decoration: none;
-        color: var(--color-secondary);
-        transition: all 0.2s ease-in-out;
+    .sundial {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        box-sizing: border-box;
 
-        &:hover {
-            color: var(--color-primary);
+        padding: 0px var(--32px);
+
+        .hour {
+            flex: 1;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .line {
+            width: var(--2px);
+            background: var(--color-primary);
+            border-radius: var(--8px);
         }
     }
 </style>
