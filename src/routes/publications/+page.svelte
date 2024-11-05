@@ -1,61 +1,19 @@
 <script lang="ts">
 	import ArticleCard from "$lib/components/ArticleCard.svelte";
 	import SectionHeader from "$lib/components/SectionHeader.svelte";
+	import publications from "$lib/config/publications.json";
 
-	const articles = [
-		{
-			type: "conference",
-			url: "#",
-			title: "A Fake article 1",
-			authors: ["Author 1", "Author 2", "Author 3"],
-			year: "20XX",
-			journal: "A fake conference.",
-			doi: "XXXX/XXXXXXXXXXXXX",
-			tags: ["Tag 1", "Tag 2", "Tag 3", "Tag 4"],
-			location: "A city",
-			hasAward: false,
-		},
-		{
-			type: "journal",
-			url: "#",
-			title: "A Fake article 2",
-			authors: ["Author 1", "Author 2"],
-			year: "20XX",
-			journal: "A fake journal.",
-			hasAward: false,
-		},
-		{
-			type: "conference",
-			url: "#",
-			title: "A Fake article 3",
-			authors: ["Author 1"],
-			year: "20XX",
-			journal: "A fake conference.",
-			location: "A city",
-			hasAward: true,
-		},
-		{
-			type: "conference",
-			url: "#",
-			title: "A Fake article 4",
-			authors: ["Author 1", "Author 2", "Author 3", "Author 4"],
-			year: "20XX",
-			journal: "A fake conference.",
-			doi: "XXXX/XXXXXXXXXXXXX",
-			tags: ["Tag 1", "Tag 2"],
-			location: "A city",
-			hasAward: true,
-		},
-		{
-			type: "journal",
-			url: "#",
-			title: "A Fake article 5",
-			authors: ["Author 1", "Author 2"],
-			year: "20XX",
-			journal: "A fake conference.",
-			doi: "XXXX/XXXXXXXXXXXXX",
-			hasAward: false,
-		},
+	const articles = publications["articles"];
+	const citations = publications["citations"];
+	const hindex = publications["hindex"];
+	const coauthors = [
+		...new Set(
+			articles
+				.map((e) => {
+					return e.authors;
+				})
+				.flat(),
+		),
 	];
 </script>
 
@@ -72,7 +30,32 @@
 		title="Publications."
 		description="A collection of my scientific publications on academic journals and conferences around the world."
 	/>
-	<!-- TODO: Add citations off of google scholar -->
+	<div class="metrics">
+		<div class="metric">
+			<span class="title-medium">
+				<b>{articles === undefined ? "--" : articles.length}</b>
+			</span>
+			<span class="title-small">papers</span>
+		</div>
+		<div class="metric">
+			<span class="title-medium">
+				<b>{citations === undefined ? "--" : citations}</b>
+			</span>
+			<span class="title-small">citations</span>
+		</div>
+		<div class="metric">
+			<span class="title-medium">
+				<b>{hindex === undefined ? "--" : hindex}</b>
+			</span>
+			<span class="title-small">h-index</span>
+		</div>
+		<div class="metric">
+			<span class="title-medium">
+				<b>{coauthors === undefined ? "--" : coauthors.length}</b>
+			</span>
+			<span class="title-small">co-authors</span>
+		</div>
+	</div>
 	<div class="content">
 		{#each articles as article}
 			<div class="project"><ArticleCard {...article} /></div>
@@ -82,6 +65,21 @@
 
 <style lang="scss">
 	@use "../../mixins.scss" as *;
+
+	.metrics {
+		display: flex;
+		flex-direction: row;
+		gap: var(--24px);
+		flex-wrap: wrap;
+		justify-content: center;
+
+		.metric {
+			display: flex;
+			flex-direction: row;
+			gap: var(--8px);
+			align-items: baseline;
+		}
+	}
 
 	.content {
 		width: 100%;
