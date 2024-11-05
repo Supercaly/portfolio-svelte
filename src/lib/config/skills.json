@@ -1,0 +1,162 @@
+[
+    {
+        "name": "Programming",
+        "icons": [
+            {
+                "name": "c_avatar.png",
+                "description": "C"
+            },
+            {
+                "name": "cpp_avatar.png",
+                "description": "C++"
+            },
+            {
+                "name": "python_avatar.png",
+                "description": "Python"
+            },
+            {
+                "name": "arduino_avatar.png",
+                "description": "Arduino"
+            },
+            {
+                "name": "golang_avatar.png",
+                "description": "Go Lang"
+            },
+            {
+                "name": "kotlin_avatar.png",
+                "description": "Kotlin"
+            },
+            {
+                "name": "java_avatar.png",
+                "description": "Java"
+            },
+            {
+                "name": "flutter_avatar.png",
+                "description": "Flutter"
+            },
+            {
+                "name": "html_avatar.png",
+                "description": "HTML"
+            },
+            {
+                "name": "css_avatar.png",
+                "description": "CSS"
+            },
+            {
+                "name": "javascript_avatar.png",
+                "description": "JavaScript/Typescript"
+            },
+            {
+                "name": "react_avatar.png",
+                "description": "React"
+            },
+            {
+                "name": "svelte_avatar.png",
+                "description": "Svelte"
+            },
+            {
+                "name": "nodejs_avatar.png",
+                "description": "NodeJS"
+            },
+            {
+                "name": "haskell_avatar.png",
+                "description": "Haskell"
+            },
+            {
+                "name": "erlang_avatar.png",
+                "description": "Erlang"
+            },
+            {
+                "name": "matlab_avatar.png",
+                "description": "Matlab"
+            },
+            {
+                "name": "swift_avatar.png",
+                "description": "Swift"
+            },
+            {
+                "name": "csharp_avatar.png",
+                "description": "C#"
+            }
+        ]
+    },
+    {
+        "name": "Technologies",
+        "icons": [
+            {
+                "name": "database_avatar.png",
+                "description": "SQL/NoSQL"
+            },
+            {
+                "name": "iot_avatar.png",
+                "description": "Internet of Things"
+            },
+            {
+                "name": "machine_learning_avatar.png",
+                "description": "Machine Learning"
+            },
+            {
+                "name": "latex_avatar.png",
+                "description": "Latex"
+            },
+            {
+                "name": "embedded_avatar.png",
+                "description": "Embedded"
+            }
+        ]
+    },
+    {
+        "name": "OS",
+        "icons": [
+            {
+                "name": "linux_avatar.png",
+                "description": "Linux"
+            },
+            {
+                "name": "windows_avatar.png",
+                "description": "Windows"
+            },
+            {
+                "name": "macos_avatar.png",
+                "description": "macOS"
+            },
+            {
+                "name": "android_avatar.png",
+                "description": "Android"
+            },
+            {
+                "name": "ios_avatar.png",
+                "description": "iOS"
+            },
+            {
+                "name": "docker_avatar.png",
+                "description": "Docker"
+            }
+        ]
+    },
+    {
+        "name": "Art",
+        "icons": [
+            {
+                "name": "photoshop_avatar.png",
+                "description": "Photoshop"
+            },
+            {
+                "name": "illustrator_avatar.png",
+                "description": "Illustrator"
+            },
+            {
+                "name": "gimp_avatar.png",
+                "description": "Gimp"
+            },
+            {
+                "name": "inkscape_avatar.png",
+                "description": "Inkscape"
+            },
+            {
+                "name": "figma_avatar.png",
+                "description": "Figma"
+            }
+        ]
+    }
+]

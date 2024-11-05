@@ -1,50 +1,7 @@
 <script lang="ts">
 	import ProjectCard from "$lib/components/ProjectCard.svelte";
 	import SectionHeader from "$lib/components/SectionHeader.svelte";
-
-	// TODO: Move this to a separate file
-	const projects = [
-		{
-			title: "Title of Fake project 1",
-			description:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in congue nisi, sit amet cursus urna. Fusce vel enim ipsum. Curabitur mattis metus ligula, vel tincidunt arcu suscipit eget.",
-			links: [
-				{ url: "#", type: "github" },
-				{ url: "#", type: "globe" },
-				{ url: "#", type: "play" },
-			],
-		},
-		{
-			title: "Title of Fake project 2",
-			description:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-			links: [],
-		},
-		{
-			title: "Title of Fake project 3",
-			description:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in congue nisi, sit amet cursus urna. Fusce vel enim ipsum. Curabitur mattis metus ligula, vel tincidunt arcu suscipit eget.",
-			links: [{ url: "#", type: "github" }],
-			tags: ["tag 1", "tag 2", "tag 3"],
-		},
-		{
-			title: "Title of Fake project 4",
-			description: "Lorem ipsum dolor sit amet.",
-			links: [],
-			tags: ["tag 1"],
-		},
-		{
-			title: "Title of Fake project 5",
-			description:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in congue nisi, sit amet cursus urna. Fusce vel enim ipsum. Curabitur mattis metus ligula, vel tincidunt arcu suscipit eget.",
-			links: [
-				{ url: "#", type: "github" },
-				{ url: "#", type: "globe" },
-				{ url: "#", type: "play" },
-			],
-			tags: ["tag 1", "tag 2", "tag 3"],
-		}
-	];
+	import projects from "$lib/config/projects.json";
 </script>
 
 <svelte:head>
@@ -55,7 +12,7 @@
 <section>
 	<SectionHeader
 		title="Projects."
-		description="A collection of some of my best projects."
+		description="Some of my creative and exciting tech projects."
 	/>
 	<div class="content">
 		{#each projects as project}

@@ -1,0 +1,114 @@
+[
+    {
+        "title": "Sensorlib",
+        "description": "Android library for real-time windowed sensor data at a fixed sampling rate",
+        "links": [
+            {
+                "url": "https://github.com/Supercaly/android-sensorlib",
+                "type": "github"
+            }
+        ],
+        "tags": [
+            "Android",
+            "Kotlin",
+            "Wear OS"
+        ]
+    },
+    {
+        "title": "Copper VM",
+        "description": "Virtual Machine written in Golang",
+        "links": [
+            {
+                "url": "https://github.com/Supercaly/coppervm",
+                "type": "github"
+            }
+        ],
+        "tags": [
+            "Golang",
+            "Virtual Machine"
+        ]
+    },
+    {
+        "title": "TikTok Scraper Extension",
+        "description": "Google Chrome Extension to scrape content off of TikTok Videos",
+        "links": [
+            {
+                "url": "https://github.com/Supercaly/TikTokScraperExtension",
+                "type": "github"
+            }
+        ],
+        "tags": [
+            "Chrome Extension"
+        ]
+    },
+    {
+        "title": "TS",
+        "description": "Tuple space implemented in Erlang",
+        "links": [
+            {
+                "url": "https://github.com/Supercaly/ADCC-Project",
+                "type": "github"
+            }
+        ],
+        "tags": [
+            "Erlang"
+        ]
+    },
+    {
+        "title": "iirj dart",
+        "description": "An IIR filter library written in Dart.",
+        "links": [
+            {
+                "url": "https://github.com/Supercaly/iirjdart",
+                "type": "github"
+            },
+            {
+                "url": "https://pub.dev/packages/iirjdart",
+                "type": "globe"
+            }
+        ],
+        "tags": [
+            "Dart",
+            "IIR filter"
+        ]
+    },
+    {
+        "title": "Balance",
+        "description": "Flutter application for measure your posture!",
+        "links": [
+            {
+                "url": "https://github.com/Supercaly/Balance-Flutter",
+                "type": "github"
+            },
+            {
+                "url": "https://www.balancemobile.it",
+                "type": "globe"
+            }
+        ],
+        "tags": [
+            "Flutter",
+            "Android"
+        ]
+    },
+    {
+        "title": "Tasky",
+        "description": "Multi-platform app for managing projects in the workplace",
+        "links": [
+            {
+                "url": "https://github.com/Supercaly/ASPDM-Project",
+                "type": "github"
+            }
+        ],
+        "tags": [
+            "Flutter",
+            "Android"
+        ]
+    },
+    {
+        "title": "Petify",
+        "description": "Mobile app to help people find their missing pets",
+        "tags": [
+            "Android"
+        ]
+    }
+]

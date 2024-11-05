@@ -1,46 +1,8 @@
 <script lang="ts">
 	import ActivityCard from "$lib/components/ActivityCard.svelte";
 	import SectionHeader from "$lib/components/SectionHeader.svelte";
-
-	const studies = [
-		{
-			start: "20XX",
-			end: "present",
-			title: "A Fake study 1.",
-			institution: "A place where we did something.",
-			description: "A long description of what we did.",
-			location: "Somewhere",
-		},
-		{
-			start: "20XX",
-			title: "A Fake study 2.",
-			institution: "A place where we did something.",
-			location: "Somewhere",
-		},
-		{
-			start: "20XX",
-			end: "20XX",
-			title: "A Fake study 3.",
-			institution: "A place where we did something.",
-			location: "Somewhere",
-		},
-	];
-	const works = [
-		{
-			start: "20XX",
-			end: "present",
-			title: "A Fake work 1.",
-			institution: "A place where we did something.",
-			description: "A long description of what we did.",
-			location: "Somewhere",
-		},
-		{
-			start: "20XX",
-			title: "A Fake work 2.",
-			institution: "A place where we did something.",
-			location: "Somewhere",
-		},
-	];
+	import studies from "$lib/config/studies.json";
+	import works from "$lib/config/works.json";
 </script>
 
 <svelte:head>
@@ -54,7 +16,7 @@
 <section>
 	<SectionHeader
 		title="Study."
-		description="A list of all my academic degrees."
+		description="My academic journey and the knowledge I've gained along the way."
 	/>
 	<div class="content">
 		{#each studies as study}
@@ -65,7 +27,7 @@
 <section>
 	<SectionHeader
 		title="Work."
-		description="A list of jobs and internships done in the years."
+		description="A glimpse into my professional experiences."
 	/>
 	<div class="content">
 		{#each works as work}

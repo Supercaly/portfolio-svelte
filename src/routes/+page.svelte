@@ -2,37 +2,7 @@
     import Avatar from "$lib/components/Avatar.svelte";
     import SectionHeader from "$lib/components/SectionHeader.svelte";
     import SubsectionHeader from "$lib/components/SubsectionHeader.svelte";
-
-    const skills = [
-        {
-            name: "Programming",
-            icons: [
-                { name: "c_avatar.png", description: "C" },
-                { name: "c_avatar.png", description: "C" },
-                { name: "c_avatar.png", description: "C" },
-                { name: "c_avatar.png", description: "C" },
-                { name: "c_avatar.png", description: "C" },
-                { name: "c_avatar.png", description: "C" },
-                { name: "c_avatar.png", description: "C" },
-            ],
-        },
-        {
-            name: "OS",
-            icons: [
-                { name: "c_avatar.png", description: "C" },
-                { name: "c_avatar.png", description: "C" },
-            ],
-        },
-        {
-            name: "Art",
-            icons: [
-                { name: "c_avatar.png", description: "C" },
-                { name: "c_avatar.png", description: "C" },
-                { name: "c_avatar.png", description: "C" },
-                { name: "c_avatar.png", description: "C" },
-            ],
-        },
-    ];
+    import skills from "$lib/config/skills.json";
 
     let screenWidth: number = $state(0);
     let mediumScreen: boolean = $derived(screenWidth < 768);
