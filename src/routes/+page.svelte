@@ -86,7 +86,7 @@
         <SubsectionHeader title={skill.name} />
         <div class="avatars">
             {#each skill.icons as avatar}
-                <Avatar size={mediumScreen ? "70px" : "100px"} {...avatar} />
+                <Avatar size={mediumScreen ? "70px" : "90px"} {...avatar} />
             {/each}
         </div>
     {/each}
@@ -136,12 +136,13 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: var(--48px);
+        gap: var(--32px);
         justify-content: center;
-        padding: var(--32px) 0px;
+        padding: var(--32px) var(--32px);
 
         @include md($max: $screen-medium) {
             gap: var(--24px);
+            padding: var(--32px) 0px;
         }
     }
 </style>
