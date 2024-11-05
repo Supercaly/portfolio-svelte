@@ -51,37 +51,46 @@
 <section>
     <SectionHeader title="I'm Lorenzo." description="" />
     <div class="content">
-        <div class="picture"></div>
+        <div class="picture">
+            <figure>
+                <img src="/me.JPG" alt="Me" width="384" height="384" />
+            </figure>
+        </div>
         <div class="text-content">
             <p class="headline-large">
                 Developer & PhD student based in Italy.
             </p>
             <p class="body-medium">
-                Ciao. My name is Lorenzo Calisti and I live in Monte Cerignone
-                (PU), a little town in the center of Italy.
+                <b>Ciao.</b> I'm <b>Lorenzo Calisti</b>, a developer and PhD
+                student based in Monte Cerignone (PU), a charming town nestled
+                in central Italy.
             </p>
             <p class="body-medium">
-                I’ve got a three-year degree and a master's degree in Applied
-                Computer Science from University of Urbino.
-            </p>
-            <p class="body-medium">
-                At the moment I’m a PhD student in <b
+                I hold both a bachelor's and a master’s degree in Applied
+                Computer Science from the University of Urbino, where I’m
+                currently pursuing a PhD in <b
                     >Research Methods in Science and Technology (ReMeST)</b
-                > at the University of Urbino.
+                >.
             </p>
             <p class="body-medium">
-                My passion for technology goes beyond academics. I love
-                <b>tinkering</b> with new technologies and <b>developing</b> small projects of
-                all sort.
+                My passion for technology extends well beyond academics; I love <b
+                    >experimenting</b
+                >
+                with new tech and
+                <b>developing</b> small projects of all kinds.
             </p>
             <p class="body-medium">
-                When I’m not working on some project I’m probably watching a movie 🎬, an anime 🇯🇵 or I’m riding my MTB bike 🚴🏼‍♂️.
+                When I'm not working on a project, you’ll find me watching a
+                movie 🎬, exploring anime 🇯🇵, or riding my mountain bike 🚴🏼‍♂️.
             </p>
         </div>
     </div>
 </section>
 <section>
-    <SectionHeader title="Skills." description="Some of my skills." />
+    <SectionHeader
+        title="Skills."
+        description="Tools and technologies that I work with to bring ideas to life."
+    />
     {#each skills as skill}
         <SubsectionHeader title={skill.name} />
         <div class="avatars">
@@ -103,10 +112,9 @@
             grid-column-start: 3;
             grid-column-end: 10;
             margin-top: var(--24px);
-            aspect-ratio: 4/5;
             max-height: 384px;
-            background: gray;
             border-radius: var(--12px);
+            overflow: hidden;
 
             @include md($max: $screen-medium) {
                 grid-column-start: 2;
@@ -114,6 +122,17 @@
                 width: 100%;
                 margin-top: 0px;
                 border-radius: var(--24px) var(--24px) 0px 0px;
+            }
+
+            figure {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
             }
         }
 
