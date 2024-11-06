@@ -1,15 +1,20 @@
 <script lang="ts">
     import "../app.scss";
+    import { onMount } from "svelte";
     import Contacts from "./Contacts.svelte";
     import Footer from "./Footer.svelte";
     import Navbar from "./Navbar.svelte";
 
     let { children } = $props();
 
-    // Default theme based on the current hours of light
-    const currentHour = new Date().getHours();
-    let theme = $state((currentHour >= 6 && currentHour <= 20) ? 'light': 'dark');
+    let theme = $state('light');
     let showContacts = $state(false);
+
+    onMount(() => {
+        // Default theme based on the current hours of light
+        const currentHour = new Date().getHours();
+        theme = (currentHour >= 6 && currentHour <= 20) ? 'light' : 'dark';
+    });
 
     $inspect("current theme set to", theme);
 </script>
