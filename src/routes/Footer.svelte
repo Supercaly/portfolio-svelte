@@ -5,15 +5,15 @@
     function mapToHeight(num: number, time: number) {
         switch (Math.abs(time - num)) {
             case 0:
-                return 30;
+                return 60;
             case 1:
-                return 25;
+                return 50;
             case 2:
-                return 20;
+                return 40;
             case 3:
-                return 15;
+                return 30;
             default:
-                return 10;
+                return 20;
         }
     }
 </script>
@@ -45,8 +45,8 @@
         align-items: center;
         width: 100%;
         max-width: var(--footer-max-width);
-        padding: var(--spacing-l) 0px var(--spacing-xl);
-        gap: var(--spacing-l);
+        padding: var(--spacing-xl) 0px var(--spacing-xl);
+        gap: var(--spacing-xl);
     }
 
     .sundial {
@@ -59,7 +59,7 @@
 
         .hour {
             flex: 1;
-            height: 30px;
+            height: 60px;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;

@@ -28,18 +28,6 @@
     }
 
     let { onContactsClick, onThemeChange, currentTheme }: Props = $props();
-
-    // function onThemeSwitch() {
-    //     onThemeChange(cur)
-    //     switch (currentTheme) {
-    //         case "light":
-    //             currentTheme = "dark";
-    //             break;
-    //         case "dark":
-    //             currentTheme = "light";
-    //             break;
-    //     }
-    // }
 </script>
 
 <header>
