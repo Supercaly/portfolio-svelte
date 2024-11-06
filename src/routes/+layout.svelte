@@ -13,7 +13,7 @@
     onMount(() => {
         // Default theme based on the current hours of light
         const currentHour = new Date().getHours();
-        theme = (currentHour >= 6 && currentHour <= 20) ? 'light' : 'dark';
+        theme = (currentHour >= 6 && currentHour < 20) ? 'light' : 'dark';
     });
 
     $inspect("current theme set to", theme);
