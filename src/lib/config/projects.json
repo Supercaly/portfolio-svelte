@@ -1,5 +1,20 @@
 [
     {
+        "title": "PATENT: System and methods for estimating bacterial load in air.",
+        "description": "",
+        "links": [
+            {
+                "url": "https://www.knowledge-share.eu/en/patents/system-and-methods-for-estimating-bacterial-load-in-air",
+                "type": "globe"
+            }
+        ],
+        "tags": [
+            "Healthtech",
+            "Environment Monitoring",
+            "Monitoring Systems"
+        ]
+    },
+    {
         "title": "Sensorlib",
         "description": "Android library for real-time windowed sensor data at a fixed sampling rate",
         "links": [
