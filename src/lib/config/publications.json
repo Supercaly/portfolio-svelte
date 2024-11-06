@@ -3,319 +3,335 @@
     "hindex": 3,
     "articles": [
         {
-            "type": "journal",
-            "title": "A Low-cost IoT Sensor for Indoor Monitoring with Prediction-based Data Collection",
-            "authors": [
-                "P. Capellacci",
-                "L. Calisti",
-                "E. Lattanzi"
-            ],
-            "journal": "International Journal of Advanced Computer Science and Applications",
-            "tags": [
-                "IoT",
-                "Indoor monitoring",
-                "Prediction-based data collection",
-                "Deep-learning"
-            ],
-            "year": "2024"
-        },
-        {
-            "type": "conference",
-            "title": "Tuning Intersection-Over-Union Algorithm To Enhance Tracking Performances",
-            "authors": [
-                "N. Kania",
-                "C. Contoli",
-                "L. Calisti",
-                "E. Lattanzi"
-            ],
-            "journal": "21th International Conferences on Applied Computing (AC 2024)",
-            "year": "2024",
-            "tags": [
-                "Multi-object tracking algorithm",
-                "performance tuning",
-                "parameter sensitivity",
-                "Monte Carlo experiments"
+            "title": "2024",
+            "articles": [
+                {
+                    "type": "journal",
+                    "title": "A Low-cost IoT Sensor for Indoor Monitoring with Prediction-based Data Collection",
+                    "authors": [
+                        "P. Capellacci",
+                        "L. Calisti",
+                        "E. Lattanzi"
+                    ],
+                    "journal": "International Journal of Advanced Computer Science and Applications",
+                    "tags": [
+                        "IoT",
+                        "Indoor monitoring",
+                        "Prediction-based data collection",
+                        "Deep-learning"
+                    ],
+                    "year": "2024"
+                },
+                {
+                    "type": "conference",
+                    "title": "Tuning Intersection-Over-Union Algorithm To Enhance Tracking Performances",
+                    "authors": [
+                        "N. Kania",
+                        "C. Contoli",
+                        "L. Calisti",
+                        "E. Lattanzi"
+                    ],
+                    "journal": "21th International Conferences on Applied Computing (AC 2024)",
+                    "year": "2024",
+                    "tags": [
+                        "Multi-object tracking algorithm",
+                        "performance tuning",
+                        "parameter sensitivity",
+                        "Monte Carlo experiments"
+                    ],
+                    "hasAward": true
+                },
+                {
+                    "type": "conference",
+                    "title": "Are Transformers a Useful Tool for Tiny devices in Human Activity Recognition?",
+                    "authors": [
+                        "E. Lattanzi",
+                        "L. Calisti",
+                        "C. Contoli"
+                    ],
+                    "journal": "8th International Conference on Advances in Artificial Intelligence (ICAAI 2024)",
+                    "tags": [
+                        "Transformer",
+                        "Human Activity Recognition",
+                        "Tiny devices"
+                    ],
+                    "year": "2024",
+                    "hasAward": true
+                },
+                {
+                    "type": "journal",
+                    "title": "Semantic Template Recognition of Human Activities in Wearable Sensor Data Using Siamese Network",
+                    "authors": [
+                        "E. Lattanzi",
+                        "C. Contoli",
+                        "L. Calisti",
+                        "G. Di Fabrizio",
+                        "N. Kania",
+                        "S. Peretti"
+                    ],
+                    "journal": "SSRN",
+                    "year": "2024",
+                    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4912104#paper-references-widget",
+                    "tags": [
+                        "Human Activity Recognition",
+                        "Wearable Sensors",
+                        "Template Matching",
+                        "Siamese Network"
+                    ]
+                },
+                {
+                    "type": "conference",
+                    "authors": [
+                        "L. Calisti",
+                        "C. Contoli",
+                        "G. Di Fabrizio",
+                        "N. Kania",
+                        "E. Lattanzi"
+                    ],
+                    "title": "EESiamese: Energy-efficient Siamese Neural Network for Constrained Devices",
+                    "year": "2024",
+                    "journal": "9th International Conference on Machine Learning Technologies (ICMLT 2024)",
+                    "tags": [
+                        "Siamese network",
+                        "energy efficiency",
+                        "edge devices"
+                    ],
+                    "doi": "10.1145/3674029.3674073",
+                    "location": "Oslo, Norway",
+                    "url": "https://dl.acm.org/doi/pdf/10.1145/3674029.3674073",
+                    "hasAward": true
+                },
+                {
+                    "type": "journal",
+                    "authors": [
+                        "L. Calisti",
+                        "E. Lattanzi"
+                    ],
+                    "title": "Real-time Energy-efficient Sensor Libraries for Wearable Devices",
+                    "year": "2024",
+                    "journal": "IEEE ACCESS",
+                    "tags": [
+                        "Energy-efficient programming",
+                        "Wearable devices",
+                        "Human activity recognition",
+                        "Wear OS"
+                    ],
+                    "url": "https://ieeexplore.ieee.org/document/10600468",
+                    "doi": "10.1109/access.2024.3430049"
+                },
+                {
+                    "type": "journal",
+                    "authors": [
+                        "C. Contoli",
+                        "L. Calisti",
+                        "G. Di Fabrizio",
+                        "N. Kania",
+                        "A. Bogliolo",
+                        "E. Lattanzi"
+                    ],
+                    "title": "A power-aware vision-based virtual sensor for real-time edge computing",
+                    "year": "2024",
+                    "journal": "Journal Of Real-Time Image Processing",
+                    "tags": [
+                        "Edge computing",
+                        "Virtual sensor",
+                        "Energy-aware object tracking"
+                    ],
+                    "url": "https://link.springer.com/article/10.1007/s11554-024-01482-0",
+                    "doi": "10.1007/s11554-024-01482-0"
+                },
+                {
+                    "type": "conference",
+                    "authors": [
+                        "N. Kania",
+                        "A. Bogliolo",
+                        "L. Calisti",
+                        "C. Contoli",
+                        "G. Di Fabrizio",
+                        "L. Romanelli",
+                        "E. Lattanzi"
+                    ],
+                    "title": "A Vision-based Virtual Sensor to Enhance Privacy and Energy Efficiency on Edge Computing",
+                    "year": "2024",
+                    "journal": "International Conference on Pervasive Computing and Communications (PerCom Workshops)",
+                    "tags": [
+                        "edge computing",
+                        "virtual sensor",
+                        "energy efficiency",
+                        "privacy preservation"
+                    ],
+                    "doi": "10.1109/percomworkshops59983.2024.10503463",
+                    "url": "https://ieeexplore.ieee.org/abstract/document/10503463"
+                },
+                {
+                    "type": "conference",
+                    "authors": [
+                        "G. Di Fabrizio",
+                        "L. Calisti",
+                        "C. Contoli",
+                        "N. Kania",
+                        "E. Lattanzi"
+                    ],
+                    "title": "A Study on the energy-efficiency of the Object Tracking Algorithms in Edge Devices",
+                    "year": "2024",
+                    "journal": "International Workshop on Intelligent Systems and Paradigms for Next Generation Computing Evolution (INSPIRE 2024)",
+                    "tags": [
+                        "Energy-efficiency",
+                        "edge devices",
+                        "object tracking",
+                        " machine learning"
+                    ],
+                    "doi": "10.1145/3603166.3632541",
+                    "url": "https://dl.acm.org/doi/pdf/10.1145/3603166.3632541"
+                }
             ]
         },
         {
-            "type": "conference",
-            "title": "Are Transformers a Useful Tool for Tiny devices in Human Activity Recognition?",
-            "authors": [
-                "E. Lattanzi",
-                "L. Calisti",
-                "C. Contoli"
-            ],
-            "journal": "8th International Conference on Advances in Artificial Intelligence (ICAAI 2024)",
-            "tags": [
-                "Transformer",
-                "Human Activity Recognition",
-                "Tiny devices"
-            ],
-            "year": "2024",
-            "hasAward": true
-        },
-        {
-            "type": "journal",
-            "title": "Semantic Template Recognition of Human Activities in Wearable Sensor Data Using Siamese Network",
-            "authors": [
-                "E. Lattanzi",
-                "C. Contoli",
-                "L. Calisti",
-                "G. Di Fabrizio",
-                "N. Kania",
-                "S. Peretti"
-            ],
-            "journal": "SSRN",
-            "year": "2024",
-            "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4912104#paper-references-widget",
-            "tags": [
-                "Human Activity Recognition",
-                "Wearable Sensors",
-                "Template Matching",
-                "Siamese Network"
+            "title": "2023",
+            "articles": [
+                {
+                    "type": "journal",
+                    "year": "2023",
+                    "title": "Lightweight accurate trigger to reduce power consumption in sensor-based continuous human activity recognition",
+                    "url": "https://www.sciencedirect.com/science/article/pii/S1574119223001062",
+                    "authors": [
+                        "E. Lattanzi",
+                        "L. Calisti",
+                        "P. Capellacci"
+                    ],
+                    "journal": "Pervasive and Mobile Computing - Elsevier",
+                    "doi": "10.1016/j.pmcj.2023.101848",
+                    "tags": [
+                        "Power-aware machine learning",
+                        "Ubiquitous motion tracking",
+                        "Human activity recognition",
+                        "Wearable devices"
+                    ]
+                },
+                {
+                    "type": "conference",
+                    "authors": [
+                        "L. Calisti",
+                        "E. Lattanzi"
+                    ],
+                    "title": "SensorLib: an Energy-efficient Sensor-collection Library for Wear OS",
+                    "year": "2024",
+                    "journal": "4th European Symposium on Software Engineering (ESSE 2023)",
+                    "tags": [
+                        "energy-efficient programming",
+                        "wearable devices",
+                        "human activity recognition",
+                        "Wear OS"
+                    ],
+                    "doi": "10.1145/3651640.3651641",
+                    "url": "https://dl.acm.org/doi/pdf/10.1145/3651640.3651641",
+                    "location": "Napoli, Italy"
+                },
+                {
+                    "type": "conference",
+                    "authors": [
+                        "L. Calisti",
+                        "P. Capellacci",
+                        "G. Schiavano",
+                        "A. Conti",
+                        "G. Amagliani",
+                        "C. Papalini",
+                        "G. Brandi",
+                        "E. Lattanzi"
+                    ],
+                    "title": "An IoT Virtual Sensor for Indoor Health Risk Assessment",
+                    "year": "2023",
+                    "journal": "20th International Conferences on Applied Computing (AC 2023)",
+                    "tags": [
+                        "IoT sensor",
+                        "health risk assessment",
+                        "air bacterial load estimation"
+                    ],
+                    "location": "Madeira, Portugal"
+                },
+                {
+                    "type": "conference",
+                    "year": "2023",
+                    "title": "Energy-aware Tiny Machine Learning for Sensor-based Hand-washing Recognition",
+                    "url": "https://dl.acm.org/doi/10.1145/3589883.3589886",
+                    "authors": [
+                        "E. Lattanzi",
+                        "L. Calisti"
+                    ],
+                    "journal": "8th International Conference on Machine Learning Technologies (ICMLT 23)",
+                    "doi": "10.1145/3589883.3589886",
+                    "tags": [
+                        "Tiny Machine Learning",
+                        "Human Activity Recognition",
+                        "Support Vector Machine",
+                        "Energy aware",
+                        "Long Short-Term Memory networks"
+                    ],
+                    "location": "Stockolm, Sweden",
+                    "hasAward": true
+                }
             ]
         },
         {
-            "type": "conference",
-            "authors": [
-                "L. Calisti",
-                "C. Contoli",
-                "G. Di Fabrizio",
-                "N. Kania",
-                "E. Lattanzi"
-            ],
-            "title": "EESiamese: Energy-efficient Siamese Neural Network for Constrained Devices",
-            "year": "2024",
-            "journal": "9th International Conference on Machine Learning Technologies (ICMLT 2024)",
-            "tags": [
-                "Siamese network",
-                "energy efficiency",
-                "edge devices"
-            ],
-            "doi": "10.1145/3674029.3674073",
-            "location": "Oslo, Norway",
-            "url": "https://dl.acm.org/doi/pdf/10.1145/3674029.3674073",
-            "hasAward": true
-        },
-        {
-            "type": "journal",
-            "authors": [
-                "L. Calisti",
-                "E. Lattanzi"
-            ],
-            "title": "Real-time Energy-efficient Sensor Libraries for Wearable Devices",
-            "year": "2024",
-            "journal": "IEEE ACCESS",
-            "tags": [
-                "Energy-efficient programming",
-                "Wearable devices",
-                "Human activity recognition",
-                "Wear OS"
-            ],
-            "url": "https://ieeexplore.ieee.org/document/10600468",
-            "doi": "10.1109/access.2024.3430049"
-        },
-        {
-            "type": "journal",
-            "authors": [
-                "C. Contoli",
-                "L. Calisti",
-                "G. Di Fabrizio",
-                "N. Kania",
-                "A. Bogliolo",
-                "E. Lattanzi"
-            ],
-            "title": "A power-aware vision-based virtual sensor for real-time edge computing",
-            "year": "2024",
-            "journal": "Journal Of Real-Time Image Processing",
-            "tags": [
-                "Edge computing",
-                "Virtual sensor",
-                "Energy-aware object tracking"
-            ],
-            "url": "https://link.springer.com/article/10.1007/s11554-024-01482-0",
-            "doi": "10.1007/s11554-024-01482-0"
-        },
-        {
-            "type": "conference",
-            "authors": [
-                "N. Kania",
-                "A. Bogliolo",
-                "L. Calisti",
-                "C. Contoli",
-                "G. Di Fabrizio",
-                "L. Romanelli",
-                "E. Lattanzi"
-            ],
-            "title": "A Vision-based Virtual Sensor to Enhance Privacy and Energy Efficiency on Edge Computing",
-            "year": "2024",
-            "journal": "International Conference on Pervasive Computing and Communications (PerCom Workshops)",
-            "tags": [
-                "edge computing",
-                "virtual sensor",
-                "energy efficiency",
-                "privacy preservation"
-            ],
-            "doi": "10.1109/percomworkshops59983.2024.10503463",
-            "url": "https://ieeexplore.ieee.org/abstract/document/10503463"
-        },
-        {
-            "type": "conference",
-            "authors": [
-                "G. Di Fabrizio",
-                "L. Calisti",
-                "C. Contoli",
-                "N. Kania",
-                "E. Lattanzi"
-            ],
-            "title": "A Study on the energy-efficiency of the Object Tracking Algorithms in Edge Devices",
-            "year": "2024",
-            "journal": "International Workshop on Intelligent Systems and Paradigms for Next Generation Computing Evolution (INSPIRE 2024)",
-            "tags": [
-                "Energy-efficiency",
-                "edge devices",
-                "object tracking",
-                " machine learning"
-            ],
-            "doi": "10.1145/3603166.3632541",
-            "url": "https://dl.acm.org/doi/pdf/10.1145/3603166.3632541"
-        },
-        {
-            "type": "conference",
-            "authors": [
-                "L. Calisti",
-                "E. Lattanzi"
-            ],
-            "title": "SensorLib: an Energy-efficient Sensor-collection Library for Wear OS",
-            "year": "2024",
-            "journal": "4th European Symposium on Software Engineering (ESSE 2023)",
-            "tags": [
-                "energy-efficient programming",
-                "wearable devices",
-                "human activity recognition",
-                "Wear OS"
-            ],
-            "doi": "10.1145/3651640.3651641",
-            "url": "https://dl.acm.org/doi/pdf/10.1145/3651640.3651641",
-            "location": "Napoli, Italy"
-        },
-        {
-            "type": "conference",
-            "year": "2023",
-            "title": "Energy-aware Tiny Machine Learning for Sensor-based Hand-washing Recognition",
-            "url": "https://dl.acm.org/doi/10.1145/3589883.3589886",
-            "authors": [
-                "E. Lattanzi",
-                "L. Calisti"
-            ],
-            "journal": "8th International Conference on Machine Learning Technologies (ICMLT 23)",
-            "doi": "10.1145/3589883.3589886",
-            "tags": [
-                "Tiny Machine Learning",
-                "Human Activity Recognition",
-                "Support Vector Machine",
-                "Energy aware",
-                "Long Short-Term Memory networks"
-            ],
-            "hasAward": true,
-            "location": "Stockolm, Sweden"
-        },
-        {
-            "type": "journal",
-            "year": "2023",
-            "title": "Lightweight accurate trigger to reduce power consumption in sensor-based continuous human activity recognition",
-            "url": "https://www.sciencedirect.com/science/article/pii/S1574119223001062",
-            "authors": [
-                "E. Lattanzi",
-                "L. Calisti",
-                "P. Capellacci"
-            ],
-            "journal": "Pervasive and Mobile Computing - Elsevier",
-            "doi": "10.1016/j.pmcj.2023.101848",
-            "tags": [
-                "Power-aware machine learning",
-                "Ubiquitous motion tracking",
-                "Human activity recognition",
-                "Wearable devices"
-            ]
-        },
-        {
-            "type": "conference",
-            "authors": [
-                "L. Calisti",
-                "P. Capellacci",
-                "G. Schiavano",
-                "A. Conti",
-                "G. Amagliani",
-                "C. Papalini",
-                "G. Brandi",
-                "E. Lattanzi"
-            ],
-            "title": "An IoT Virtual Sensor for Indoor Health Risk Assessment",
-            "year": "2023",
-            "journal": "20th International Conferences on Applied Computing (AC 2023)",
-            "tags": [
-                "IoT sensor",
-                "health risk assessment",
-                "air bacterial load estimation"
-            ],
-            "location": "Madeira, Portugal"
-        },
-        {
-            "type": "journal",
-            "year": "2022",
-            "title": "Automatic Unstructured Handwashing Recognition using Smartwatch to Reduce Contact Transmission of Pathogens",
-            "url": "https://ieeexplore.ieee.org/document/9852222",
-            "authors": [
-                "E. Lattanzi",
-                "L. Calisti",
-                "V. Freschi"
-            ],
-            "journal": "IEEE Access",
-            "doi": "10.1109/ACCESS.2022.3197279",
-            "tags": [
-                "Machine learning",
-                "COVID-19",
-                "Wearable computers",
-                "Pathogens"
-            ]
-        },
-        {
-            "type": "journal",
-            "authors": [
-                "E. Lattanzi",
-                "L. Calisti",
-                "V. Freschi"
-            ],
-            "title": "Unstructured Handwashing Recognition Using Smartwatch to Reduce Contact Transmission of Pathogens",
-            "year": "2022",
-            "journal": "IEEE ACCESS",
-            "tags": [
-                "COVID-19 prevention",
-                "handwashing recognition",
-                "machine learning",
-                "wearable sensors"
-            ],
-            "url": "https://ieeexplore.ieee.org/document/9852222",
-            "doi": "10.1109/ACCESS.2022.3197279"
-        },
-        {
-            "type": "journal",
-            "url": "https://zenodo.org/record/6036183#.Ygo7B-7MIlJ",
-            "title": "Smart Box IoT",
-            "authors": [
-                "L. Calisti",
-                "E. Lattanzi"
-            ],
-            "year": "2022",
-            "journal": "Zenodo",
-            "doi": "10.5281/zenodo.6036183",
-            "tags": [
-                "Internet of Things",
-                "Machine Learning",
-                "Arduino",
-                "ESP8266",
-                "Anomaly Detection"
+            "title": "2022",
+            "articles": [
+                {
+                    "type": "journal",
+                    "authors": [
+                        "E. Lattanzi",
+                        "L. Calisti",
+                        "V. Freschi"
+                    ],
+                    "title": "Unstructured Handwashing Recognition Using Smartwatch to Reduce Contact Transmission of Pathogens",
+                    "year": "2022",
+                    "journal": "IEEE ACCESS",
+                    "tags": [
+                        "COVID-19 prevention",
+                        "handwashing recognition",
+                        "machine learning",
+                        "wearable sensors"
+                    ],
+                    "url": "https://ieeexplore.ieee.org/document/9852222",
+                    "doi": "10.1109/ACCESS.2022.3197279"
+                },
+                {
+                    "type": "journal",
+                    "year": "2022",
+                    "title": "Automatic Unstructured Handwashing Recognition using Smartwatch to Reduce Contact Transmission of Pathogens",
+                    "url": "https://ieeexplore.ieee.org/document/9852222",
+                    "authors": [
+                        "E. Lattanzi",
+                        "L. Calisti",
+                        "V. Freschi"
+                    ],
+                    "journal": "IEEE Access",
+                    "doi": "10.1109/ACCESS.2022.3197279",
+                    "tags": [
+                        "Machine learning",
+                        "COVID-19",
+                        "Wearable computers",
+                        "Pathogens"
+                    ]
+                },
+                {
+                    "type": "journal",
+                    "url": "https://zenodo.org/record/6036183#.Ygo7B-7MIlJ",
+                    "title": "Smart Box IoT",
+                    "authors": [
+                        "L. Calisti",
+                        "E. Lattanzi"
+                    ],
+                    "year": "2022",
+                    "journal": "Zenodo",
+                    "doi": "10.5281/zenodo.6036183",
+                    "tags": [
+                        "Internet of Things",
+                        "Machine Learning",
+                        "Arduino",
+                        "ESP8266",
+                        "Anomaly Detection"
+                    ]
+                }
             ]
         }
     ]
