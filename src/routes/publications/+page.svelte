@@ -5,17 +5,19 @@
 	import publications from "$lib/config/publications.json";
 
 	const articles = publications["articles"];
-	const citations = publications["citations"];
-	const hindex = publications["hindex"];
-	const coauthors = [
+	const flat_articles = articles.flatMap((y) => y.articles);
+	const num_articles = flat_articles.length;
+	const num_citations = publications["citations"];
+	const num_hindex = publications["hindex"];
+	const num_coauthors = [
 		...new Set(
-			articles
+			flat_articles
 				.map((e) => {
 					return e.authors;
 				})
 				.flat(),
 		),
-	];
+	].length;
 </script>
 
 <svelte:head>
@@ -34,25 +36,25 @@
 	<div class="metrics">
 		<div class="metric">
 			<span class="title-medium">
-				<b>{articles === undefined ? "--" : articles.length}</b>
+				<b>{num_articles === undefined ? "--" : num_articles}</b>
 			</span>
 			<span class="title-small">papers</span>
 		</div>
 		<div class="metric">
 			<span class="title-medium">
-				<b>{citations === undefined ? "--" : citations}</b>
+				<b>{num_citations === undefined ? "--" : num_citations}</b>
 			</span>
 			<span class="title-small">citations</span>
 		</div>
 		<div class="metric">
 			<span class="title-medium">
-				<b>{hindex === undefined ? "--" : hindex}</b>
+				<b>{num_hindex === undefined ? "--" : num_hindex}</b>
 			</span>
 			<span class="title-small">h-index</span>
 		</div>
 		<div class="metric">
 			<span class="title-medium">
-				<b>{coauthors === undefined ? "--" : coauthors.length}</b>
+				<b>{num_coauthors === undefined ? "--" : num_coauthors}</b>
 			</span>
 			<span class="title-small">co-authors</span>
 		</div>

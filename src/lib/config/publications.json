@@ -20,7 +20,8 @@
                         "Prediction-based data collection",
                         "Deep-learning"
                     ],
-                    "year": "2024"
+                    "year": "2024",
+                    "hasAward": false
                 },
                 {
                     "type": "conference",
@@ -77,7 +78,8 @@
                         "Wearable Sensors",
                         "Template Matching",
                         "Siamese Network"
-                    ]
+                    ],
+                    "hasAward": false
                 },
                 {
                     "type": "conference",
@@ -117,7 +119,8 @@
                         "Wear OS"
                     ],
                     "url": "https://ieeexplore.ieee.org/document/10600468",
-                    "doi": "10.1109/access.2024.3430049"
+                    "doi": "10.1109/access.2024.3430049",
+                    "hasAward": false
                 },
                 {
                     "type": "journal",
@@ -138,7 +141,8 @@
                         "Energy-aware object tracking"
                     ],
                     "url": "https://link.springer.com/article/10.1007/s11554-024-01482-0",
-                    "doi": "10.1007/s11554-024-01482-0"
+                    "doi": "10.1007/s11554-024-01482-0",
+                    "hasAward": false
                 },
                 {
                     "type": "conference",
@@ -161,7 +165,8 @@
                         "privacy preservation"
                     ],
                     "doi": "10.1109/percomworkshops59983.2024.10503463",
-                    "url": "https://ieeexplore.ieee.org/abstract/document/10503463"
+                    "url": "https://ieeexplore.ieee.org/abstract/document/10503463",
+                    "hasAward": false
                 },
                 {
                     "type": "conference",
@@ -182,7 +187,8 @@
                         " machine learning"
                     ],
                     "doi": "10.1145/3603166.3632541",
-                    "url": "https://dl.acm.org/doi/pdf/10.1145/3603166.3632541"
+                    "url": "https://dl.acm.org/doi/pdf/10.1145/3603166.3632541",
+                    "hasAward": false
                 }
             ]
         },
@@ -206,7 +212,8 @@
                         "Ubiquitous motion tracking",
                         "Human activity recognition",
                         "Wearable devices"
-                    ]
+                    ],
+                    "hasAward": false
                 },
                 {
                     "type": "conference",
@@ -225,7 +232,8 @@
                     ],
                     "doi": "10.1145/3651640.3651641",
                     "url": "https://dl.acm.org/doi/pdf/10.1145/3651640.3651641",
-                    "location": "Napoli, Italy"
+                    "location": "Napoli, Italy",
+                    "hasAward": false
                 },
                 {
                     "type": "conference",
@@ -247,7 +255,8 @@
                         "health risk assessment",
                         "air bacterial load estimation"
                     ],
-                    "location": "Madeira, Portugal"
+                    "location": "Madeira, Portugal",
+                    "hasAward": false
                 },
                 {
                     "type": "conference",
@@ -292,7 +301,8 @@
                         "wearable sensors"
                     ],
                     "url": "https://ieeexplore.ieee.org/document/9852222",
-                    "doi": "10.1109/ACCESS.2022.3197279"
+                    "doi": "10.1109/ACCESS.2022.3197279",
+                    "hasAward": false
                 },
                 {
                     "type": "journal",
@@ -311,7 +321,8 @@
                         "COVID-19",
                         "Wearable computers",
                         "Pathogens"
-                    ]
+                    ],
+                    "hasAward": false
                 },
                 {
                     "type": "journal",
@@ -330,7 +341,8 @@
                         "Arduino",
                         "ESP8266",
                         "Anomaly Detection"
-                    ]
+                    ],
+                    "hasAward": false
                 }
             ]
         }
