@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ArticleCard from "$lib/components/ArticleCard.svelte";
+	import Icon from "$lib/components/Icon.svelte";
 	import SectionHeader from "$lib/components/SectionHeader.svelte";
 	import SubsectionHeader from "$lib/components/SubsectionHeader.svelte";
 	import publications from "$lib/config/publications.json";
@@ -58,6 +59,7 @@
 			</span>
 			<span class="title-small">co-authors</span>
 		</div>
+		<a class="list-btn" href="/publications/list"><Icon name="list" /></a>
 	</div>
 	<div class="content">
 		{#each articles as year}
@@ -82,12 +84,18 @@
 		gap: var(--24px);
 		flex-wrap: wrap;
 		justify-content: center;
+		align-items: center;
 
 		.metric {
 			display: flex;
 			flex-direction: row;
 			gap: var(--8px);
 			align-items: baseline;
+		}
+
+		.list-btn {
+			text-decoration: none;
+			color: var(--color-primary);
 		}
 	}
 
@@ -102,7 +110,7 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			
+
 			.articles {
 				width: 100%;
 				display: grid;
