@@ -55,7 +55,7 @@
             </div>
             <div class="text-content">
                 {#if url !== undefined}
-                    <a href={url}>
+                    <a href={url} target="_blank">
                         <h5 class="title-large">{title}</h5>
                     </a>
                 {:else}
