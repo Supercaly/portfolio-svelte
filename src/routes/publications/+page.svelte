@@ -6,6 +6,11 @@
 	import publications from "$lib/config/publications.json";
 
 	const articles = publications["articles"];
+	articles.forEach((e) =>
+		e.articles.sort(
+			(a, b) => Number(b.doi === undefined) - Number(a.doi === undefined),
+		),
+	);
 	const flat_articles = articles.flatMap((y) => y.articles);
 	const num_articles = flat_articles.length;
 	const num_citations = publications["citations"];
