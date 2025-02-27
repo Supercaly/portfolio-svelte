@@ -1,6 +1,6 @@
 {
-    "citations": 25,
-    "hindex": 3,
+    "citations": 31,
+    "hindex": 4,
     "articles": [
         {
             "title": "2024",
@@ -257,6 +257,8 @@
                         "health risk assessment",
                         "air bacterial load estimation"
                     ],
+                    "url": "https://iadisportal.org/digital-library/an-iot-virtual-sensor-for-indoor-health-risk-assessment",
+                    "doi": "978-989-8704-53-5",
                     "location": "Madeira, Portugal",
                     "hasAward": false
                 },
