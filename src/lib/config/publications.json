@@ -3,6 +3,30 @@
     "hindex": 4,
     "articles": [
         {
+            "title": "2025",
+            "articles": [
+                {
+                    "type": "conference",
+                    "title": "Are Transformers a Useful Tool for Tiny devices in Human Activity Recognition?",
+                    "authors": [
+                        "E. Lattanzi",
+                        "L. Calisti",
+                        "C. Contoli"
+                    ],
+                    "journal": "8th International Conference on Advances in Artificial Intelligence (ICAAI 2024)",
+                    "tags": [
+                        "Transformer",
+                        "Human Activity Recognition",
+                        "Tiny devices"
+                    ],
+                    "url": "https://doi.org/10.1145/3704137.3704171",
+                    "doi": "10.1145/3704137.3704171",
+                    "year": "2025",
+                    "hasAward": true
+                }
+            ]
+        },
+        {
             "title": "2024",
             "articles": [
                 {
@@ -42,23 +66,6 @@
                         "parameter sensitivity",
                         "Monte Carlo experiments"
                     ],
-                    "hasAward": true
-                },
-                {
-                    "type": "conference",
-                    "title": "Are Transformers a Useful Tool for Tiny devices in Human Activity Recognition?",
-                    "authors": [
-                        "E. Lattanzi",
-                        "L. Calisti",
-                        "C. Contoli"
-                    ],
-                    "journal": "8th International Conference on Advances in Artificial Intelligence (ICAAI 2024)",
-                    "tags": [
-                        "Transformer",
-                        "Human Activity Recognition",
-                        "Tiny devices"
-                    ],
-                    "year": "2024",
                     "hasAward": true
                 },
                 {
